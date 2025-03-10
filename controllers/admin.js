@@ -211,7 +211,7 @@ async function postCoach(req,res,next){
         }
 }
 
-//取得教練自己的課程列表
+//取得教練自己的課程列表 參考老師做法
 async function getCoachCourses(req,res,next){
     try{
         const { id } = req.user
@@ -305,7 +305,7 @@ async function getCoachCourseDetail(req,res,next){
         next(error)
       }
 }
-//變更教練個人資料 >>！！
+//變更教練個人資料 參考老師做法
 async function putCoachProfile(req,res,next){
     try {
         const { id } = req.user
@@ -427,7 +427,7 @@ async function getCoachProfile(req,res,next){
         }
 }
 
-//取得教練月營收資料
+//取得教練月營收資料 參考老師做法
 async function getMonthRevenue(req,res,next){
     const {id} =req.user
     const {month} = req.query
